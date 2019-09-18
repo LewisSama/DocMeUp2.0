@@ -1,1 +1,2 @@
-# DocMeUp2.0
+# DocMeUp
+Projet 1 de la WCS
