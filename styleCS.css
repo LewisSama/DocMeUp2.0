@@ -106,3 +106,22 @@ h3 {
 .paragraphe {
     line-height:10 px;
 }
+
+/* --- style pour les cheatSheets avec le code --- */
+/* --- mobile et responsive ;) */
+.codeCheat{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.codeCheat li {
+    padding: 10px;
+    flex: 1 300px;
+    background-color: rgb(247, 235, 235);
+    margin: 5px;
+    padding-left: 30px;
+}
+.codeCheat li code{
+    padding: 10px;
+    background-color: rgb(235, 227, 227);
+}
