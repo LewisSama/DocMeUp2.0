@@ -78,6 +78,11 @@ h3 {
     width: 280px;
 }
 
+.photo_box_2 {
+    height: 100px;
+    width: 220px;
+}
+
 .photo-principal {
     margin: 10px;
     display: flex;
@@ -93,4 +98,8 @@ h3 {
     margin: 10px; 
     display: flex;
     justify-content: space-around; 
+}
+
+.paragraphe {
+    line-height:10 px;
 }
