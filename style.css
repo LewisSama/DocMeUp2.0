@@ -88,11 +88,12 @@ nav input {
         display: flex;
         list-style: none;
         background-color: 	#634832;
-        color: white;
+        color: 	#ece0d1;
     }
     
     footer ul{
         list-style: none;
+        display: flex;
     }
     /* premier section du footer */
     footer .members{
@@ -106,20 +107,33 @@ nav input {
     /* troisieme section du footer*/
     footer .othersFooter{
         flex-direction: column;
-        margin: auto;
+        margin-right: auto;
         width: 90%;
     }
-
+    
+    /* image Wild Code School */
     .othersFooterList{
+        margin: 10px;
+    }
+    .othersFooter li:first-child{
+        display: flex;
+    }
+    .othersFooter li:first-child img{
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .wildImgFooter{
         margin: 4%;
+        width: 100px;   
     }
 
     /* Footer click events */
     .othersFooterList a:link{
-        color: white;
+        color: 	#ece0d1;
     }
     .othersFooterList a:visited{
-        color: white;
+        color: 	#ece0d1;
     }
 
     
@@ -152,7 +166,9 @@ nav input {
         text-align: center;
         flex: 2 200px;
         padding: 1%;
-        padding-top: 5%;
+    }
+    .linksFooter{
+        margin: 10px;
     }
 
     /* troisieme section du footer*/
@@ -164,22 +180,30 @@ nav input {
         flex: 1 200px;
         padding: 1%;
     }
+    .othersFooter li:first-child img{
+        margin: 0;
+        margin-left: 10px;
+    }
+    .wildImgFooter{
+        margin: 4%;
+        width: 200px;   
+    }
+   
 
     /* Footer click events */
-
     .linksFooter a:link{
         text-decoration: none;
-        color: white;
+        color: 	#ece0d1;
     }
 
     .linksFooter a:visited{
         text-decoration: none;
-        color: white;
+        color: 	#ece0d1;
     }
 
     .linksFooter a:hover{
         text-decoration: underline;
-        color: white;
+        color: 	#ece0d1;
     }
 
 
