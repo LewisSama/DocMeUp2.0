@@ -17,6 +17,7 @@ h1 {
 
 h2 {
     color: #634832;
+    margin
 }
 
 .nav__list {
@@ -45,6 +46,7 @@ h2 {
 }
 
 .table_matieres {
+    display: block;
     float: left;
     margin: 20px;
     border: none;
@@ -109,7 +111,7 @@ h3 {
 
 /* --- style pour les cheatSheets avec le code --- */
 /* --- mobile et responsive ;) */
-.codeCheat{
+.c{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
