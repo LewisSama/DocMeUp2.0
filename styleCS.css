@@ -8,17 +8,17 @@
       display: flex;
       justify-content: center;
     }
+
+}
 body {
     margin: 0;
     padding: 0;
 }
-
 .melenchon {
     padding: 4px;
     display: flex;
     flex-direction: column;
 }
-
 section {
     margin: 4px;
     padding: 3px;
@@ -129,8 +129,9 @@ h3 {
 /* --- mobile et responsive ;) */
 .codeCheat{
     padding-inline-start: 5px;
-    display: inline-flex;
+    display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 .codeCheat li {
     display: flex;
@@ -148,7 +149,7 @@ h3 {
     margin-right: 30px;
 }
 .photo-principal .imgSelectSection{
-    width: 40%;
+    max-width: 50% ;
 }
 .CodeParagraphe{
     font-size: 80%;
