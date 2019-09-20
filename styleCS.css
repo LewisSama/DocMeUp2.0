@@ -32,10 +32,11 @@ h2 {
     display: none;    
 }
 
-.nav__burger {
+.nav__burger {    
+    margin: 8px;
     border:none;
 	padding:6px 6px 6px 6px;
-	border-radius:2px;
+	border-radius:20px;
 	box-shadow:2px 2px 5px #aaa;
 	background:#fff;
 	font:bold 13px Arial;
@@ -54,8 +55,7 @@ h2 {
 
 .table_matieres {
     margin: 0;
-    border-top: 1px dashed beige;
-    border-bottom: 1px dashed beige;
+    border: none;
     padding: 0;
 }
 
@@ -84,14 +84,52 @@ h3 {
     color: #634832;
 }
 
+.photo_box {
+    height: 100px;
+    width: 280px;
+}
+
+.photo_box_2 {
+    height: 100px;
+    width: 220px;
+}
+
 .photo-principal {
     margin: 10px;
     display: flex;
     justify-content: space-around;
 }
 
-.icones {
+.icone_image {
+    height: 30px;
+    width: 30px;
+}
+
+.icones {    
     margin: 10px; 
     display: flex;
     justify-content: space-around; 
+}
+
+.paragraphe {
+    line-height:10 px;
+}
+
+/* --- style pour les cheatSheets avec le code --- */
+/* --- mobile et responsive ;) */
+.codeCheat{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.codeCheat li {
+    padding: 10px;
+    flex: 1 300px;
+    background-color: rgb(247, 235, 235);
+    margin: 5px;
+    padding-left: 30px;
+}
+.codeCheat li code{
+    padding: 10px;
+    background-color: rgb(235, 227, 227);
 }
