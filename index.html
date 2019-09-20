@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="fr">
-
     <head>
         <meta charset="UTF-8">
         <title>DocMeUp ! Cheat Sheets for all your language</title>
@@ -14,8 +12,11 @@
     <body> 
         <header>
             <nav>
-                <img src="https://via.placeholder.com/150x100" alt="Logo">
-                <input placeholder="&#128270; Recherche"></input>
+                <img src="img/logo_site.png" alt="Logo">
+                <div class="center">
+                    <p class="nav_title">DocMeUp</p>
+                    <input placeholder="&#128270; Recherche">
+                </div>
                 <div class="profile">
                     <ul>
                         <li><a href="WorkInProgress.html">Mon compte</a></li>
@@ -26,7 +27,7 @@
                 </div>
             </nav>
                 <div class="profileMobile">
-                    <img class="profil_picMobile" src="https://via.placeholder.com/100x100" alt="Photo de profil">
+                    <img class="profil_picMobile" src="img/member.png" alt="Photo de profil">
                     <ul>
                         <li><a href="WorkInProgress.html">Mon compte</a></li>
                         <li><a href="WorkInProgress.html">Mes favoris</a></li>
@@ -43,14 +44,14 @@
                 <p>Choisissez votre sujet</p>
             </article>
             <article class="block">
-                <a href="CS.html"><img src="https://via.placeholder.com/200" alt="Bloc cliquable contenant le logo HTML"></a>
-                <a href="WorkInProgress.html"><img src="https://via.placeholder.com/200" alt="Bloc cliquable contenant le logo CSS"></a>
-                <a href="WorkInProgress.html"><img src="https://via.placeholder.com/200" alt="Bloc cliquable contenant le logo Linux"></a>
-                <a href="WorkInProgress.html"><img src="https://via.placeholder.com/200" alt="Bloc cliquable contenant le logo Git"></a>
-                <a href="WorkInProgress.html"><img src="https://via.placeholder.com/200" alt="Bloc cliquable contenant le logo Java"></a>
-                <a href="WorkInProgress.html"><img src="https://via.placeholder.com/200" alt="Bloc cliquable contenant le logo JavaScript"></a>
-                <a href="WorkInProgress.html"><img src="https://via.placeholder.com/200" alt="Bloc cliquable contenant le logo PHP"></a>
-                <a href="WorkInProgress.html"><img src="https://via.placeholder.com/200" alt="Bloc cliquable contenant le logo React.JS"></a>
+                <a href="CS.html"><img src="img/logo_HTML5.png" alt="Bloc cliquable contenant le logo HTML"></a>
+                <a href="CS.html"><img src="img/logo_CSS3.png" alt="Bloc cliquable contenant le logo CSS"></a>
+                <a href="CS.html"><img src="img/logo_Linux.png" alt="Bloc cliquable contenant le logo Linux"></a>
+                <a href="CS.html"><img src="img/logo_GIT.jpg" alt="Bloc cliquable contenant le logo Git"></a>
+                <a href="WorkInProgress.html"><img src="img/work.png" alt="Bloc cliquable contenant le logo Java"></a>
+                <a href="WorkInProgress.html"><img src="img/work.png" alt="Bloc cliquable contenant le logo JavaScript"></a>
+                <a href="WorkInProgress.html"><img src="img/work.png" alt="Bloc cliquable contenant le logo PHP"></a>
+                <a href="WorkInProgress.html"><img src="img/work.png" alt="Bloc cliquable contenant le logo React.JS"></a>
             </article>
         </main>
         <footer>
@@ -74,6 +75,15 @@
                 <li class="othersFooterList">&copy; Copyright 2019</li>
             </ul>
         </footer>
-
+        <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('.nav__burger').addEventListener('click', (e) => {
+            const $burger = e.currentTarget;
+            const $list = $burger.parentElement.querySelector('.nav__list');
+            $burger.classList.toggle('nav__burger--active');
+            $list.classList.toggle('nav__list--active');
+        });
+    })
+</script>
     </body>
 </html>
