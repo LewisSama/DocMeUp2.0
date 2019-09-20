@@ -13,6 +13,12 @@ body {
     padding: 0;
 }
 
+.melenchon {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
 section {
     margin: 4px;
     padding: 3px;
@@ -114,17 +120,21 @@ h3 {
 }
 
 .paragraphe {
+    margin: 4px;
+    padding: 1px;
     line-height:10 px;
 }
 
 /* --- style pour les cheatSheets avec le code --- */
 /* --- mobile et responsive ;) */
-.c{
-    display: flex;
-    flex-wrap: wrap;
+.codeCheat{
+    padding-inline-start: 5px;
+    display: inline-flex;
     list-style: none;
 }
 .codeCheat li {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     flex: 1 300px;
     background-color: rgb(247, 235, 235);
@@ -132,6 +142,14 @@ h3 {
     padding-left: 30px;
 }
 .codeCheat li code{
-    padding: 10px;
+    padding: 5px;
     background-color: rgb(235, 227, 227);
+    margin-bottom: 5px;
+    margin-right: 30px;
+}
+.photo-principal .imgSelectSection{
+    width: 40%;
+}
+.CodeParagraphe{
+    font-size: 80%;
 }
