@@ -58,51 +58,17 @@ nav input {
     padding: 10px;
     border-radius: 20px;
 }
-.title {
-    text-align: center;
-    border: 1px solid black;
-    max-width: 75%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px black;
-}
-.title h1{
-    margin-bottom: 0.2em;
-}
-.title p {
-    margin: 0.5em;
-    color: grey;
-    font-size: 0.8em;
-}
-.block {
-    display: inline-block;
-    text-align: center;
-}
-.block img{
-    margin: 2em;
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px black;
-}
-
-/* ------------------Mobile first ----------------- */
 @media (min-width: 320px){
     /* Footer container  */
     footer {
         display: flex;
         list-style: none;
         background-color: 	#634832;
-        color: 	#ece0d1;
+        color: white;
     }
     
     footer ul{
         list-style: none;
-        display: flex;
     }
     /* premier section du footer */
     footer .members{
@@ -116,33 +82,20 @@ nav input {
     /* troisieme section du footer*/
     footer .othersFooter{
         flex-direction: column;
-        margin-right: auto;
+        margin: auto;
         width: 90%;
     }
-    
-    /* image Wild Code School */
+
     .othersFooterList{
-        margin: 10px;
-    }
-    .othersFooter li:first-child{
-        display: flex;
-    }
-    .othersFooter li:first-child img{
-        margin: auto;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-    .wildImgFooter{
         margin: 4%;
-        width: 100px;   
     }
 
     /* Footer click events */
     .othersFooterList a:link{
-        color: 	#ece0d1;
+        color: white;
     }
     .othersFooterList a:visited{
-        color: 	#ece0d1;
+        color: white;
     }
 
     
@@ -175,9 +128,6 @@ nav input {
         text-align: center;
         flex: 2 200px;
         padding: 1%;
-    }
-    .linksFooter{
-        margin: 10px;
         padding-top: 4%;
     }
 
@@ -190,33 +140,24 @@ nav input {
         flex: 1 200px;
         padding: 1%;
     }
-    .othersFooter li:first-child img{
-        margin: 0;
-        margin-left: 10px;
-    }
-    .wildImgFooter{
-        margin: 4%;
-        width: 200px;   
-    }
-   
 
     /* Footer click events */
+
     .linksFooter a:link{
         text-decoration: none;
-        color: 	#ece0d1;
+        color: white;
     }
 
     .linksFooter a:visited{
         text-decoration: none;
-        color: 	#ece0d1;
+        color: white;
     }
 
     .linksFooter a:hover{
         text-decoration: underline;
-        color: 	#ece0d1;
+        color: white;
     }
 
 
 
 }
-
