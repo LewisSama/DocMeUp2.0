@@ -1,0 +1,163 @@
+body {
+    margin: 0px;
+    background-color: #dbc1ac;
+}
+
+.profile {
+    display: none;
+}
+
+.profileMobile ul {
+    display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav img{
+    max-height: 100px;
+    margin: 10px;
+    border-radius: 30%;
+    border: 1px solid black
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: #634832;
+    box-shadow: 0px 3px 3px grey;
+    justify-content: space-between;
+}
+
+.profileMobile{
+    padding-bottom: 0px;
+}
+
+.profil_picMobile{
+    margin: 10px;
+    border-radius: 30%;
+    border: 1px solid black;
+    max-height: 100px; 
+}
+.center {
+    display: flex;
+    flex-flow: column;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center
+}
+.center p {
+    font-size: 20px;
+    color: antiquewhite;
+}
+nav input {
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+@media (min-width: 320px){
+    /* Footer container  */
+    footer {
+        display: flex;
+        list-style: none;
+        background-color: 	#634832;
+        color: white;
+    }
+    
+    footer ul{
+        list-style: none;
+    }
+    /* premier section du footer */
+    footer .members{
+        display: none;
+    }
+    /* deuxieme section du footer links */
+    footer .linksFootSection{
+        display: none;
+    }
+
+    /* troisieme section du footer*/
+    footer .othersFooter{
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+    }
+
+    .othersFooterList{
+        margin: 4%;
+    }
+
+    /* Footer click events */
+    .othersFooterList a:link{
+        color: white;
+    }
+    .othersFooterList a:visited{
+        color: white;
+    }
+
+    
+}
+
+/* ---------- taille écran Ipad - ordinateur -----------  */
+@media (min-width: 800px){
+        
+
+    /* premier section du footer */
+    footer .members{
+        display: block;
+        align-items: center; 
+        flex: 1 200px;
+        padding: 1%;
+    }
+    /* spacing members */
+    footer .members .member{
+        margin: 10px;
+    }
+    /* members imgs */
+    footer .members .member img{
+        width: 10%;
+        margin-right: 10px;
+    }
+
+    /* deuxieme section du footer links */
+    footer .linksFootSection{
+        display: block;
+        text-align: center;
+        flex: 2 200px;
+        padding: 1%;
+        padding-top: 4%;
+    }
+
+    /* troisieme section du footer*/
+    footer .othersFooter{
+        flex-direction: column;
+        align-self: center;
+        margin-right: 30px;
+        /* margin-left: auto; --only in right side */
+        flex: 1 200px;
+        padding: 1%;
+    }
+
+    /* Footer click events */
+
+    .linksFooter a:link{
+        text-decoration: none;
+        color: white;
+    }
+
+    .linksFooter a:visited{
+        text-decoration: none;
+        color: white;
+    }
+
+    .linksFooter a:hover{
+        text-decoration: underline;
+        color: white;
+    }
+
+
+
+}
