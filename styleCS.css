@@ -134,6 +134,7 @@ h3 {
 /* --- style pour les cheatSheets avec le code --- */
 /* --- mobile et responsive ;) */
 .codeCheat{
+    margin: 1px;
     padding-inline-start: 5px;
     display: inline-flex;
     list-style: none;
@@ -141,11 +142,10 @@ h3 {
 .codeCheat li {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    flex: 1 300px;
+    padding: 5px;
+    flex: 300px;
     background-color: rgb(247, 235, 235);
-    margin: 5px;
-    padding-left: 30px;
+    margin: 5px;    
 }
 .codeCheat li code{
     padding: 5px;
