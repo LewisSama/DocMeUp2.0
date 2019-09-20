@@ -10,9 +10,31 @@
       justify-content: center;
     }
 }
+
 body {
     margin: 0;
     padding: 0;
+}
+
+
+.profile_list {
+    display: none;    
+}
+
+.Button_profile {    
+    margin: 10px;
+    border-radius: 30%;
+    border: 1px solid black;
+    max-height: 100px;
+}
+
+.profile_list--active {
+    display: inline-block;
+}
+
+.Button_profile--active {
+    transform: translateY(0);
+    display: block;
 }
 .melenchon {
     padding: 4px;
@@ -165,10 +187,6 @@ h3 {
     display: none;
 }
 
-.profileMobile ul {
-    display: none;
-}
-
 nav{
     display: flex;
     justify-content: space-between;
@@ -190,17 +208,6 @@ header {
     justify-content: space-between;
 }
 
-.profileMobile{
-    padding-bottom: 0px;
-    margin: 5px
-}
-
-.profil_picMobile{
-    margin: 10px;
-    border-radius: 30%;
-    border: 1px solid black;
-    max-height: 100px; 
-}
 .center {
     display: flex;
     flex-flow: column;
