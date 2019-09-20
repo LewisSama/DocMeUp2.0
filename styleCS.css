@@ -10,13 +10,15 @@
       justify-content: center;
     }
 }
-
+body {
+    margin: 0;
+    padding: 0;
+}
 .melenchon {
     padding: 4px;
     display: flex;
     flex-direction: column;
 }
-
 section {
     margin: 4px;
     padding: 3px;
@@ -139,8 +141,9 @@ h3 {
 .codeCheat{
     margin: 1px;
     padding-inline-start: 5px;
-    display: inline-flex;
+    display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 .codeCheat li {
     display: flex;
@@ -157,10 +160,6 @@ h3 {
     margin-right: 30px;
 }
 
-    body {
-    margin: 0px;
-    background-color: ;
-}
 
 .profile {
     display: none;
@@ -222,7 +221,7 @@ nav input {
 }
 
 .photo-principal .imgSelectSection{
-    width: 40%;
+    max-width: 50% ;
 }
 .CodeParagraphe{
     font-size: 80%;
