@@ -10,6 +10,13 @@
       justify-content: center;
     }
 }
+
+.melenchon {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
 section {
     margin: 4px;
     padding: 3px;
@@ -120,25 +127,37 @@ h3 {
     background-color: #634832;
 }
 
+.paragraphe {
+    margin: 4px;
+    padding: 1px;
+    line-height:10 px;
+}
+
+
 /* --- style pour les cheatSheets avec le code --- */
 /* --- mobile et responsive ;) */
-.c{
-    display: flex;
-    flex-wrap: wrap;
+.codeCheat{
+    margin: 1px;
+    padding-inline-start: 5px;
+    display: inline-flex;
     list-style: none;
 }
 .codeCheat li {
-    padding: 10px;
-    flex: 1 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    flex: 300px;
     background-color: rgb(247, 235, 235);
-    margin: 5px;
-    padding-left: 30px;
+    margin: 5px;    
 }
 .codeCheat li code{
-    padding: 10px;
+    padding: 5px;
     background-color: rgb(235, 227, 227);
+    margin-bottom: 5px;
+    margin-right: 30px;
 }
-body {
+
+    body {
     margin: 0px;
     background-color: ;
 }
@@ -200,4 +219,11 @@ nav input {
     margin: auto;
     padding: 10px;
     border-radius: 20px;
+}
+
+.photo-principal .imgSelectSection{
+    width: 40%;
+}
+.CodeParagraphe{
+    font-size: 80%;
 }
