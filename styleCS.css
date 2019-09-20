@@ -29,11 +29,13 @@ h1 {
 
 h2 {
     color: #634832;
-    margin
 }
 
 .nav__list {
     display: none;    
+}
+nav a{
+    text-decoration: none;
 }
 
 .nav__burger {    
@@ -53,7 +55,7 @@ h2 {
 }
 
 .nav__burger--active {
-    transform: translateX(50);
+    transform: translateX(40px);
     display: block;
 }
 
@@ -78,7 +80,7 @@ ul {
     color: #634832;
     cursor: pointer;
     text-decoration: none;
-    }
+}
 
 li {
     padding: 5px;
@@ -110,7 +112,7 @@ h3 {
     height: 30px;
     width: 30px;
 }
-.new_BG{
+.new_BG {
     max-height: 30px;
     width: 30px;
     background-color: #dbc1ac;
@@ -130,6 +132,7 @@ h3 {
     padding: 1px;
     line-height:10 px;
 }
+
 
 /* --- style pour les cheatSheets avec le code --- */
 /* --- mobile et responsive ;) */
