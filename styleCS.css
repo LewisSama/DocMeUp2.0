@@ -8,7 +8,6 @@
       display: flex;
       justify-content: center;
     }
-  
 body {
     margin: 0;
     padding: 0;
@@ -26,6 +25,7 @@ h1 {
 
 h2 {
     color: #634832;
+    margin
 }
 
 .nav__list {
@@ -54,7 +54,9 @@ h2 {
 }
 
 .table_matieres {
-    margin: 0;
+    display: block;
+    float: left;
+    margin: 20px;
     border: none;
     padding: 0;
 }
@@ -117,7 +119,7 @@ h3 {
 
 /* --- style pour les cheatSheets avec le code --- */
 /* --- mobile et responsive ;) */
-.codeCheat{
+.c{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
