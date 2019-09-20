@@ -1,3 +1,4 @@
+/*-------------------------HEADER--START-------------------*/
 body {
     margin: 0px;
     background-color: #dbc1ac;
@@ -21,7 +22,7 @@ nav img{
     max-height: 100px;
     margin: 10px;
     border-radius: 30%;
-    border: 1px solid black
+    border: 1px solid black;
 }
 
 header {
@@ -58,6 +59,11 @@ nav input {
     padding: 10px;
     border-radius: 20px;
 }
+nav a{
+    text-decoration: none;
+}
+
+/*-------------------HEADER END------------------*/
 .title {
     text-align: center;
     border: 1px solid black;
@@ -88,6 +94,7 @@ nav input {
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: 5px 5px 5px black;
+    background-color: #967259;
 }
 
 /* ------------------Mobile first ----------------- */
