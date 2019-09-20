@@ -11,6 +11,12 @@
     }
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
 .profile_list {
     display: none;    
 }
@@ -30,13 +36,11 @@
     transform: translateY(0);
     display: block;
 }
-
 .melenchon {
     padding: 4px;
     display: flex;
     flex-direction: column;
 }
-
 section {
     margin: 4px;
     padding: 3px;
@@ -49,11 +53,13 @@ h1 {
 
 h2 {
     color: #634832;
-    margin
 }
 
 .nav__list {
     display: none;    
+}
+nav a{
+    text-decoration: none;
 }
 
 .nav__burger {    
@@ -73,7 +79,7 @@ h2 {
 }
 
 .nav__burger--active {
-    transform: translateX(40);
+    transform: translateX(40px);
     display: block;
 }
 
@@ -98,7 +104,7 @@ ul {
     color: #634832;
     cursor: pointer;
     text-decoration: none;
-    }
+}
 
 li {
     padding: 5px;
@@ -130,7 +136,7 @@ h3 {
     height: 30px;
     width: 30px;
 }
-.new_BG{
+.new_BG {
     max-height: 30px;
     width: 30px;
     background-color: #dbc1ac;
@@ -151,13 +157,15 @@ h3 {
     line-height:10 px;
 }
 
+
 /* --- style pour les cheatSheets avec le code --- */
 /* --- mobile et responsive ;) */
 .codeCheat{
     margin: 1px;
     padding-inline-start: 5px;
-    display: inline-flex;
+    display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 .codeCheat li {
     display: flex;
@@ -174,10 +182,6 @@ h3 {
     margin-right: 30px;
 }
 
-    body {
-    margin: 0px;
-    background-color: ;
-}
 
 .profile {
     display: none;
@@ -224,7 +228,7 @@ nav input {
 }
 
 .photo-principal .imgSelectSection{
-    width: 40%;
+    max-width: 50% ;
 }
 .CodeParagraphe{
     font-size: 80%;
