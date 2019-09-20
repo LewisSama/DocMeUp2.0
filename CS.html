@@ -15,18 +15,11 @@
                     <p class="nav_title">DocMeUp</p>
                     <input placeholder="&#128270; Recherche">
                 </div>
-                <div class="profile">
-                    <ul>
-                        <li><a href="WorkInProgress.html">Mon compte</a></li>
-                        <li><a href="WorkInProgress.html">Mes favoris</a></li>
-                        <li><a href="WorkInProgress.htmlk">Se déconnecter</a></li>
-                    </ul>
-                    <img class="profil_pic" src="https://via.placeholder.com/100x100" alt="Photo de profil">
-                </div>
+                
             </nav>
                 <div class="profileMobile">
-                    <img class="profil_picMobile" src="img/member.png" alt="Photo de profil">
-                    <ul>
+                    <button class="Button_profile"><img class="profil_picMobile" src="img/member.png" alt="Photo de profil"></button>
+                    <ul class="profile_list">
                         <li><a href="WorkInProgress.html">Mon compte</a></li>
                         <li><a href="WorkInProgress.html">Mes favoris</a></li>
                         <li><a href="WorkInProgress.html">Se déconnecter</a></li>
@@ -221,7 +214,7 @@
 
 <!--=====================================================footer========================================================================================-->
 <!--=====================================================Menu burger JS========================================================================================-->
-<script>
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.nav__burger').addEventListener('click', (e) => {
                 const $burger = e.currentTarget;
@@ -230,6 +223,17 @@
                 $list.classList.toggle('nav__list--active');
             });
         })
-    </script>      
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('.Button_profile').addEventListener('click', (e) => {
+            const $burger = e.currentTarget;
+            const $list = $burger.parentElement.querySelector('.profile_list');                
+            $burger.classList.toggle('Button_profile--active');
+            $list.classList.toggle('profile_list--active');
+        });
+    })
+</script>
 </body>
 </html>
