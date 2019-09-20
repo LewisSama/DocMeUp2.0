@@ -22,7 +22,7 @@
             <button class="nav__burger">Table des matières !</button>            
                 <ul class="nav__list">
                     <li><a href="#selecteurs" class="Lienhtml">Selecteurs</a></li>
-                    <li><a href="#SonBody" class="Lienhtml">Gérer son body</a></li>
+                    <li><a href="#boxModel" class="Lienhtml">Box-Model</a></li>
                     <li><a href="#SesLiens" class="Lienhtml">Gérer ses liens</a></li>
                     <li><a href="#SesLiens" class="Lienhtml">Gérer ses liens</a></li>
                     <li><a href="#SesLiens" class="Lienhtml">Gérer ses liens</a></li>
@@ -36,7 +36,7 @@
     <section>
         <h2 id="selecteurs">Selecteurs</h2>
             <p class="paragraphe">On peut définir un sélecteur CSS comme une ensemble de mots-clés et/ou de symboles, qui permet d'identifier les éléments qui vont profiter du style CSS.  Les sélecteurs CSS trient les éléments de la page selon leur type, certains de leurs attributs, selon leur imbrication dans le code de la page ou encore selon l'interaction avec l'utilisateur pour les liens par exemple (liste non exhaustive).</p>
-            
+
         <ul class="codeCheat">
             <li>
                 <h3>Comment ça marche</h3>
@@ -57,37 +57,75 @@
                 </code>
             </li>
             <li>
-                <h3>Comment ça marche</h3>
-                <code>Selecteur {proprieté: valeur;}
+                <h3>Sélecteurs d'attributs</h3>
+                <p class="CodeParagraphe">Les deux attributs les plus couramment utilisés sont class et id </p>
+                <code>class ou ID {proprieté: valeur;}
                 </code>
             </li>
             <li>
-                <h3>Selecteur universel</h3>
-                <code>* {
-                    font-family: serif;
-                }</code>
+                <h3>Sélecteur de classe</h3>
+                <code>.nom_de_classe {
+                    /* déclaration(s) */
+               }</code>
+               <code>élément.nom_de_classe {
+                /* déclaration(s) */
+           }</code>
             </li>
             <li>
-                <h3>Sélecteur de type</h3>
-                <code>h2 {
-                    font-size: 150%;
-                }
+                <h3>Sélecteur d'identifiant</h3>
+                <code>#nom_id {
+                    /* déclarations */
+               }
                 </code>
+            </li>
+            <li>
+                <h3>Sélecteur d'attribut</h3>
+                <code>&lt;input name="saisie"&gt;</code>
+                <code>input[name]{border:1px solid silver}</code>
+            </li>
+            <li>
+                <h3>Les sélecteurs hiérarchiques</h3>
+                <p  class="CodeParagraphe">on peut spécifier des règles pour les éléments contenus à l'intérieur de certains autres éléments sans ajouter de classe ni d'identifiant</p>
+            </li>
+            <li>
+                <h3>Le sélecteur de descendant</h3>
+                <code>#wikipedia h1 {... }</code>
+            </li>
+            <li>
+                <h3>Le sélecteur d'enfant</h3>
+                <p class="CodeParagraphe">permet de désigner un élément par filiation directe à un autre élément</p>
+                <code>#wikipedia > h1 {...}                </code>
+            </li>
+            <li>
+                <h3>Le sélecteur de frère adjacent</h3>
+                <p class="CodeParagraphe">permet de définir un style pour un élément enfant suivant immédiatement un autre élément enfant du même élément parent.</p>
+                <code>h1 + h2 {...}</code>
+            </li>
+            <li>
+                <h3>Pseudo-classes des liens</h3>
+                <code>a:link {text-decoration: none;}</code>
+                <code>a:visited {text-decoration: line-through;}</code>
+            </li>
+            <li>
+                <h3>Pseudo-classes d'interaction avec l'utilisateur</h3>
+                <code>a:hover {text-decoration: underline;}</code>
+                <code>input:focus {color: #400; background-color: #fff;}</code>
+                <code>a:active {text-decoration: none;}</code>
             </li>
         </ul>
             
             
             
             <div class="photo-principal">
-            <img src="https://via.placeholder.com/120" alt="Photo explicatif">
+                <img class="imgSelectSection" src="https://www.agencynewbusiness.com/wp-content/uploads/2017/05/selection.jpg" alt="Photo explicatif">
             </div>
 
             <div class="icones">
-                <a href="https://www.grafikart.fr/tutoriels/entete-head-1023" target="_blanck">
+                <a href="https://www.youtube.com/watch?v=Bcr70LIJcOk" target="_blanck">
                     <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819096-youtube.png" alt="video du head" class="icone_image"></a>
-                <a href="https://odyssey.wildcodeschool.com/" target="_blanck">
+                <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blanck">
                     <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819086-code.png" alt="exercice du head" class="icone_image"></a>
-                <a href="https://www.grafikart.fr/formations/html" target="_blanck">
+                <a href="https://fr.wikibooks.org/wiki/Le_langage_CSS/Les_s%C3%A9lecteurs" target="_blanck">
                     <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819091-liens.png" alt="lien de la source" class="icone_image"></a>
             </div>
             <hr>
@@ -96,18 +134,35 @@
 <!--=====================================================fin du 1er contenu========================================================================================-->       
 <!--======================================================2nd contenu===============================================================================================-->
     <section>
-            <h2 id="SonBody">Gérer son body</h2>
-                <p class="paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, repellendus quia.
-                Aliquam quasi tempora ratione sapiente temporibus, cupiditate hic et eum veniam corporis enim iure veritatis 
-                minus quia nesciunt ducimus?</p>
+            <h2 id="boxModel">Box-Model</h2>
+                <p class="paragraphe">Tous les éléments sont considérés comme des boîtes (box). Chacune de ces boîtes est constituée d’un contenu, d’un espacement intérieur, d’une bordure, et d’une marge externe.
+                    Voici les propriétés CSS qui permettent de déterminer les dimensions, la couleur, le style de chacun de ses constituants :</p>
+
+            <ul class="codeCheat">
+                <li>
+                    <p>width et height	largeur et hauteur du contenu (texte, image, etc.)</p>
+                </li>
+                <li>
+                    <p>padding	espacement intérieur, entre le contenu et la bordure</p>
+                </li>
+                <li>
+                    <p>border	bordure (ou encadrement)</p>
+                </li>
+                <li>
+                    <p>margin	marge externe, espace (transparent) entourant le tout</p>
+                </li>
+            </ul>
                 <div class="photo-principal">
                 <img src="https://via.placeholder.com/120" alt="Photo explicatif">
                 </div>
-                    <div class="icones">
-                        <a href=""><img src="https://via.placeholder.com/60" alt="lien4"></a>
-                        <a href=""><img src="https://via.placeholder.com/60" alt="lien5"></a>
-                        <a href=""><img src="https://via.placeholder.com/60" alt="lien6"></a>
-                    </div>
+                <div class="icones">
+                    <a href="https://www.youtube.com/watch?v=Bcr70LIJcOk" target="_blanck">
+                        <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819096-youtube.png" alt="video du head" class="icone_image"></a>
+                    <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blanck">
+                        <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819086-code.png" alt="exercice du head" class="icone_image"></a>
+                    <a href="https://fr.wikibooks.org/wiki/Le_langage_CSS/Les_s%C3%A9lecteurs" target="_blanck">
+                        <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819091-liens.png" alt="lien de la source" class="icone_image"></a>
+                </div>
                 <hr>
     </section>
 <!--======================================================3eme contenu===============================================================================================-->
