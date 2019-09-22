@@ -11,12 +11,36 @@
     }
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.profile_list {
+    display: none;    
+}
+
+.Button_profile {    
+    margin: 10px;
+    border-radius: 30%;
+    border: 1px solid black;
+    max-height: 100px;
+}
+
+.profile_list--active {
+    display: inline-block;
+}
+
+.Button_profile--active {
+    transform: translateY(0);
+    display: block;
+}
 .melenchon {
     padding: 4px;
     display: flex;
     flex-direction: column;
 }
-
 section {
     margin: 4px;
     padding: 3px;
@@ -141,6 +165,7 @@ h3 {
     margin: 1px;
     display: inline-flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 .codeCheat li {
     display: flex;
@@ -162,11 +187,8 @@ body {
     background-color: ;
 }
 
-.profile {
-    display: none;
-}
 
-.profileMobile ul {
+.profile {
     display: none;
 }
 
@@ -191,17 +213,6 @@ header {
     justify-content: space-between;
 }
 
-.profileMobile{
-    padding-bottom: 0px;
-    margin: 5px
-}
-
-.profil_picMobile{
-    margin: 10px;
-    border-radius: 30%;
-    border: 1px solid black;
-    max-height: 100px; 
-}
 .center {
     display: flex;
     flex-flow: column;
@@ -222,7 +233,7 @@ nav input {
 }
 
 .photo-principal .imgSelectSection{
-    width: 40%;
+    max-width: 50% ;
 }
 .CodeParagraphe{
     font-size: 80%;
