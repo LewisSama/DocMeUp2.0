@@ -81,8 +81,8 @@
                 <div class="icones">
                     <a href="https://www.grafikart.fr/tutoriels/entete-head-1023" target="_blank">
                         <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819096-youtube.png" alt="video du head" class="icone_image"></a>
-                    <a href="https://odyssey.wildcodeschool.com/" target="_blank">
-                        <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819086-code.png" alt="exercice du head" class="icone_image" class="new_BG"></a>
+                    <a href="https://odyssey.wildcodeschool.com/" target="_blank" class="new_BG">
+                        <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819086-code.png" alt="exercice du head" class="icone_image"></a>
                     <a href="https://www.grafikart.fr/formations/html" target="_blank">
                         <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819091-liens.png" alt="lien de la source" class="icone_image"></a>
                 </div>
@@ -111,7 +111,7 @@
                 <div class="icones">
                     <a href="" target="_blank">
                         <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819096-youtube.png" alt="video du head" class="icone_image"></a>
-                    <a href="" target="_blank">
+                    <a href="https://odyssey.wildcodeschool.com/" target="_blank" class="new_BG">
                         <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819086-code.png" alt="exercice du head" class="icone_image"></a>
                     <a href="" target="_blank">
                         <img src="https://image.noelshack.com/fichiers/2019/38/3/1568819091-liens.png" alt="lien de la source" class="icone_image"></a>
@@ -119,6 +119,7 @@
                 <hr>
     </section>
 <!--======================================================3eme contenu===============================================================================================-->
+<div class="Not_finished">
     <section>
             <h2 id="Liens">Gérer ses liens</h2>
                 <p class="paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, repellendus quia.
@@ -222,7 +223,29 @@
 
 <!--=====================================================footer========================================================================================-->
 <!--=====================================================Menu burger JS========================================================================================-->
-<script>
+</div>
+            <footer>
+            <ul class="members">
+                <li class="member"><img src="img/member.png" alt="Photo de profil">Jean Marmain</li>
+                <li class="member"><img src="img/member.png" alt="Photo de profil">Louis Lesage</li>
+                <li class="member"><img src="img/member.png" alt="Photo de profil">Sergio Prieto</li>
+                <li class="member"><img src="img/member.png" alt="Photo de profil">Valentin texier</li>
+            </ul>
+            <ul class="linksFootSection">
+                <li class="linksFooter"><a href="#">Contactez nous</a></li>
+                <li class="linksFooter"><a href="#">Accueil</a></li>
+                <li class="linksFooter"><a href="#">HTML</a></li>
+                <li class="linksFooter"><a href="#">CSS</a></li>
+                <li class="linksFooter"><a href="#">Linux</a></li>
+                <li class="linksFooter"><a href="#">Git</a></li>
+            </ul>
+            <ul class="othersFooter">
+                <li><img class="wildImgFooter" src="img/wildCS.png" alt="Logo Wild Code School"></li>
+                <li class="othersFooterList">Projet pour la <a href="https://www.wildcodeschool.com/fr-FR">Wild Code School</a></li>        
+                <li class="othersFooterList">&copy; Copyright 2019</li>
+            </ul>
+        </footer>
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.nav__burger').addEventListener('click', (e) => {
                 const $burger = e.currentTarget;
