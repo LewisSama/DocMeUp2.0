@@ -23,6 +23,14 @@ nav img{
     border-radius: 30%;
     border: 1px solid black
 }
+.profileMobile p{
+    display: none;
+    font-size: 12px;
+    margin-right: 4px;
+}
+.profileMobile ul {
+    display: none;
+}
 
 header {
     width: 100%;
@@ -59,12 +67,32 @@ nav input {
     border-radius: 20px;
 }
 main h1{
+    text-align: center;
     margin-top: 50%;
     margin-bottom: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    background-color: #967259;
+    color: antiquewhite;
+    
 }
 @media (min-width: 320px){
+    .profil_picMobile {
+        margin-top: 2em;
+        margin-bottom: auto;
+        width: 40px;
+        margin-right: 1em;
+    }
+    .profileMobile p{
+        display: block;
+    }    
+	nav img{
+        width: 75px;
+        height: 75px
+    }
     /* Footer container  */
     footer {
         display: flex;

@@ -139,7 +139,7 @@ h3 {
 .new_BG {
     max-height: 30px;
     width: 30px;
-    background-color: #dbc1ac;
+    background-color: white;
     border-radius: 10%;
     margin-top: 2px;
 }
@@ -161,9 +161,9 @@ h3 {
 /* --- style pour les cheatSheets avec le code --- */
 /* --- mobile et responsive ;) */
 .codeCheat{
+    
     margin: 1px;
-    padding-inline-start: 5px;
-    display: flex;
+    display: inline-flex;
     list-style: none;
     flex-wrap: wrap;
 }
@@ -180,6 +180,11 @@ h3 {
     background-color: rgb(235, 227, 227);
     margin-bottom: 5px;
     margin-right: 30px;
+}
+
+body {
+    margin: 0px;
+    background-color: ;
 }
 
 
@@ -232,4 +237,135 @@ nav input {
 }
 .CodeParagraphe{
     font-size: 80%;
+}
+.Not_finished {
+    display: none;
+}
+@media (min-width: 320px){
+    /* Footer container  */
+    footer {
+        display: flex;
+        list-style: none;
+        background-color: 	#634832;
+        color: 	#ece0d1;
+    }
+    
+    footer ul{
+        list-style: none;
+        display: flex;
+    }
+    /* premier section du footer */
+    footer .members{
+        display: none;
+    }
+    /* deuxieme section du footer links */
+    footer .linksFootSection{
+        display: none;
+    }
+
+    /* troisieme section du footer*/
+    footer .othersFooter{
+        flex-direction: column;
+        margin-right: auto;
+        width: 90%;
+    }
+    
+    /* image Wild Code School */
+    .othersFooterList{
+        margin: 10px;
+    }
+    .othersFooter li:first-child{
+        display: flex;
+    }
+    .othersFooter li:first-child img{
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .wildImgFooter{
+        margin: 4%;
+        width: 100px;   
+    }
+
+    /* Footer click events */
+    .othersFooterList a:link{
+        color: 	#ece0d1;
+    }
+    .othersFooterList a:visited{
+        color: 	#ece0d1;
+    }
+
+    
+}
+
+/* ---------- taille écran Ipad - ordinateur -----------  */
+@media (min-width: 800px){
+        
+
+    /* premier section du footer */
+    footer .members{
+        display: block;
+        align-items: center; 
+        flex: 1 200px;
+        padding: 1%;
+    }
+    /* spacing members */
+    footer .members .member{
+        margin: 10px;
+    }
+    /* members imgs */
+    footer .members .member img{
+        width: 10%;
+        margin-right: 10px;
+    }
+
+    /* deuxieme section du footer links */
+    footer .linksFootSection{
+        display: block;
+        text-align: center;
+        flex: 2 200px;
+        padding: 1%;
+    }
+    .linksFooter{
+        margin: 10px;
+        padding-top: 4%;
+    }
+
+    /* troisieme section du footer*/
+    footer .othersFooter{
+        flex-direction: column;
+        align-self: center;
+        margin-right: 30px;
+        /* margin-left: auto; --only in right side */
+        flex: 1 200px;
+        padding: 1%;
+    }
+    .othersFooter li:first-child img{
+        margin: 0;
+        margin-left: 10px;
+    }
+    .wildImgFooter{
+        margin: 4%;
+        width: 200px;   
+    }
+   
+
+    /* Footer click events */
+    .linksFooter a:link{
+        text-decoration: none;
+        color: 	#ece0d1;
+    }
+
+    .linksFooter a:visited{
+        text-decoration: none;
+        color: 	#ece0d1;
+    }
+
+    .linksFooter a:hover{
+        text-decoration: underline;
+        color: 	#ece0d1;
+    }
+
+
+
 }

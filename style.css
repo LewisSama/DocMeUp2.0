@@ -28,6 +28,12 @@ body {
     display: block;
 }
 
+.profileMobile p{
+    display: none;
+    font-size: 12px;
+    margin-right: 4px;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -110,6 +116,20 @@ nav a{
 
 /* ------------------Mobile first ----------------- */
 @media (min-width: 320px){
+    /*Header*/
+    .profil_picMobile {
+        margin-top: 2em;
+        margin-bottom: auto;
+        width: 40px;
+        margin-right: 1em;
+    }
+    .profileMobile p{
+        display: block;
+    }
+    nav img{
+        width: 75px;
+        height: 75px
+    }
     /* Footer container  */
     footer {
         display: flex;
